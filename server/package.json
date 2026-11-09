@@ -1,0 +1,22 @@
+{
+  "name": "cuenta-bancaria-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/seed.js",
+    "test": "node --test test/*.test.js",
+    "test:db": "cross-env RUN_DB_TESTS=1 node --test test/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.15.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {"cross-env": "^7.0.3"},
+  "engines": {"node": ">=20.19.0"}
+}
