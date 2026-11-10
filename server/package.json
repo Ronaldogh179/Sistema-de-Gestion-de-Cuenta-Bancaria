@@ -1,0 +1,23 @@
+{
+  "name": "cuenta-bancaria-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API REST para el Sistema de Gestión de Cuenta Bancaria Simplificada",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node seed.js",
+    "mongo:setup": "node scripts/setup-replset.js",
+    "test": "node --test tests/cuenta.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^9.12.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.2"
+  }
+}
